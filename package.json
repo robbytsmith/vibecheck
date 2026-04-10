@@ -1,0 +1,16 @@
+{
+  "name": "vibecheck",
+  "version": "1.0.0",
+  "description": "AI Dev Monitor - Budget protection for vibe coders",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"pnpm --filter server dev\" \"pnpm --filter client dev\"",
+    "build": "pnpm --filter client build && pnpm --filter server build",
+    "start": "pnpm --filter server start",
+    "type-check": "pnpm --filter server type-check && pnpm --filter client type-check"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
