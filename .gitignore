@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build output
+dist/
+build/
+.vite/
+
+# Database (local dev data — don't commit)
+*.db
+*.db-shm
+*.db-wal
+server/vibecheck.db
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# TypeScript
+*.tsbuildinfo
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
